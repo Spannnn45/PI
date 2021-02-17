@@ -18,6 +18,8 @@ def pi(distance):
         if (x*y + y*y) <= 1:
             circle += 1
 
+        print(total)
+        print(circle)
         print(4*(float(circle)/float(total)))
 
     return 4*(float(circle)/float(total))
