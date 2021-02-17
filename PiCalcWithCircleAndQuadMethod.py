@@ -5,7 +5,7 @@ def pi(distance):
     total = 0
     circle = 0
 
-    while y != 1:
+    while y < 1:
         print(x, y)
         if x >= 1:
             total += 1
@@ -16,10 +16,10 @@ def pi(distance):
             total += 1
             x += distance
 
-        if (x*y + y*y) < 1:
+        if (x*y + y*y) <= 1:
             circle += 1
 
     return 4*(circle/total)
 
 
-print(pi(.1))
+print(pi(.001))
