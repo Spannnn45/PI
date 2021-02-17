@@ -6,7 +6,6 @@ def pi(distance):
     circle = 0
 
     while y < 1:
-        print(x, y)
         if x >= 1:
             total += 1
             y += distance
@@ -19,7 +18,9 @@ def pi(distance):
         if (x*y + y*y) <= 1:
             circle += 1
 
-    return 4*(circle/total)
+        print(4*(float(circle)/float(total)))
+
+    return 4*(float(circle)/float(total))
 
 
-print(pi(.001))
+print(pi(.0000001))
